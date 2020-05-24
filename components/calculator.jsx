@@ -7,7 +7,7 @@ export default () => {
   const [numTwo, setNumTwo] = useState('')
   const [operator, setOperator] = useState('')
 
-  const runCalculation = () => {
+  const calculateAndUpdateAnswer = () => {
     const n1 = Number(numOne)
     const n2 = Number(numTwo)
     if (n1 && n2) {
@@ -41,7 +41,7 @@ export default () => {
         <option value="devide"> / </option>
       </select>
       <input type="text" onChange={(e) => { setNumTwo(e.target.value) }} />
-      <button type="button" className="equals" onClick={runCalculation}> = </button>
+      <button type="button" className="equals" onClick={calculateAndUpdateAnswer}> = </button>
       <input name="answer" disabled defaultValue={answer} />
       <div className="error">{error ? `${error}` : null}</div>
     </div>
