@@ -1,0 +1,27 @@
+body{
+  font-size: 14px;
+  text-align: center;
+}
+
+button{ padding:12px;}
+
+h1{ font-size: 40px; }
+
+input, select {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+  width:100px;
+  display: inline-block;
+}
+
+select{ width: 55px; }
+
+.error{
+  color:#d10000;
+  font-weight: bold;
+  font-size:24px;
+  margin:10px;
+}
